@@ -1,0 +1,107 @@
+
+.serviceSection {
+  width: 100%;
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
+  border-top: 5px solid red;
+}
+
+.ourServices {
+  width: 80%;
+  height: 80%;
+  border: 1px solid rgb(160, 160, 160);
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ourServices h1 {
+  font-size: 33px;
+  font-family: sans-serif;
+  padding-top: 10px;
+}
+
+.servicesCont {
+  width: 90%;
+  height: 85%;
+  border: 2px solid black;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.servicesCont div {
+  width: 48.9%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.servicesCont div button {
+  background-color: transparent;
+  border: 1px solid black;
+  padding: 8px 15px;
+  width: 125px;
+  color: black;
+  font-size: 19px;
+  user-select: none;
+}
+
+.servicesCont div button:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.service1{
+  border-right: 1px solid rgb(125, 125, 125);
+}
+
+.service2{
+  border-left: 1px solid rgb(125, 125, 125);
+}
+
+@media (max-width: 1000px) {
+  .ourServices {
+    width: 90%
+  }
+}
+
+@media (max-width: 754px) {
+  .serviceSection {
+    height: 95vh;
+  }
+  .ourServices {
+    width: 100%;
+    height: 100%;
+    border:none;
+  }
+  .servicesCont {
+    flex-direction: column;
+  }
+  .servicesCont div {
+    width: 100%;
+    height: 50%;
+    padding-top: 5px;
+  }
+  .servicesCont div h1 {
+    font-size: 30px;
+  }
+  .service1 {
+  border-bottom: 1px solid black;
+  }
+}
